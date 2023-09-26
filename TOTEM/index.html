@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <img src="seulogo.png" alt="Logotipo" class="logo">
+
+    <div class="container">
+        <h1>Gerador de Senhas</h1>
+        <div class="options">
+            <label for="patientType">Tipo de Paciente:</label>
+            <select id="patientType">
+                <option value="normal">Normal</option>
+                <option value="idoso">Idoso</option>
+                <option value="gestante">Gestante</option>
+            </select>
+
+            <label for="department">Setor:</label>
+            <select id="department">
+                <option value="pediatria">Pediatria</option>
+                <option value="odontologia">Odontologia</option>
+                
+            </select>
+
+            <button id="generateBtn">Gerar Senha</button>
+        </div>
+
+        <div class="admin-panel">
+        
+            <button id="skipBtn">Pular Senha</button>
+            <button id="recallBtn">Voltar Senha</button>
+            <button id="nextBtn">Chamar Próxima Senha</button>
+            <a href="senha.html">Ver Senha Atual</a>
+        </div>
+    </div>
+
+    <div class="current-ticket">
+        <p id="currentTicket">Senha Atual: 0</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
